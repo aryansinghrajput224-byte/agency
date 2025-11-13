@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grow Your Business With Ads 🚀</title>
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #0f172a;
+      color: white;
+      scroll-behavior: smooth;
+    }
+    header {
+      text-align: center;
+      padding: 100px 20px;
+      background: linear-gradient(135deg, #2563eb, #1e3a8a);
+    }
+    header h1 { font-size: 3rem; margin-bottom: 20px; }
+    header p { font-size: 1.2rem; margin-bottom: 30px; }
+    .cta-btn {
+      background: #facc15;
+      color: #0f172a;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .cta-btn:hover { background: #fde047; }
+    .services {
+      display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;
+      padding: 60px 20px; background: #1e293b;
+    }
+    .service {
+      background: #334155; border-radius: 10px;
+      padding: 30px; width: 300px; text-align: center; transition: 0.3s;
+    }
+    .service:hover { transform: translateY(-5px); }
+    .service h3 { color: #facc15; margin-bottom: 10px; }
+    .contact { text-align: center; padding: 80px 20px; background: #0f172a; }
+    .contact h2 { font-size: 2rem; margin-bottom: 30px; }
+    form { display: flex; flex-direction: column; align-items: center; gap: 15px; }
+    input, textarea {
+      width: 90%; max-width: 400px; padding: 12px;
+      border: none; border-radius: 8px;
+    }
+    button[type="submit"] {
+      background: #facc15; color: #0f172a;
+      padding: 12px 25px; border: none; border-radius: 6px;
+      font-size: 1rem; cursor: pointer; transition: 0.3s;
+    }
+    button[type="submit"]:hover { background: #fde047; }
+    footer {
+      background: #1e293b; text-align: center;
+      padding: 20px; color: #94a3b8;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Get More Clients with Powerful Ads 🚀</h1>
+    <p>We help businesses grow through Facebook, Instagram & Google Ads</p>
+    <button class="cta-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+      Get a Free Strategy Call
+    </button>
+  </header>
+
+  <section class="services">
+    <div class="service">
+      <h3>Facebook Ads</h3>
+      <p>Reach millions of targeted users with high-converting ad campaigns.</p>
+    </div>
+    <div class="service">
+      <h3>Instagram Ads</h3>
+      <p>Engage your audience with eye-catching visuals and reels promotions.</p>
+    </div>
+    <div class="service">
+      <h3>Google Ads</h3>
+      <p>Get clients who are already searching for your services online.</p>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Book Your Free Consultation 📞</h2>
+
+    <!-- FORM WITH FREE BACKEND -->
+    <form action="https://formspree.io/f/xnnlakwd" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Tell us about your business..." rows="4"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 Your Marketing Agency | All rights reserved
+  </footer>
+
+</body>
+</html>
